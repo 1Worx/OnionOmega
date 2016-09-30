@@ -1,0 +1,19 @@
+
+To cross compile follow the instructions at
+https://wiki.onion.io/Tutorials/Cross-Compile
+
+Extract the Thingworx C SDK and add the code in this directory to the same folders structure.
+You'll need to edit the Makefile.mips-openwrt-linux-uclibc to set the root directory
+
+to build in linux change the directory as follows and run make
+cd code/examples/sensor/linux
+make PLATFORM=mips-openwrt-linux-uclibc BUILD=release
+
+The included binaries were compiled with the c-sdk-1.3.1.957-release version of the Thingworx C SDK.
+
+To compile a version with TLS (secure sockets) support swap the following comments out in src/porting/twLinux.h of the Thingworx C SDK files.
+
+#define NO_TLS
+//#define TW_TLS_INCLUDE "twAxTls.h" 
+#define TW_TLS_INCLUDE "twNoTls.h"
+
