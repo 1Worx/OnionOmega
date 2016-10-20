@@ -8,6 +8,8 @@ This edge server supports only binary input and output from sensors. It also sup
 
 The OnionEdge comes in a few versions to accomodate security configurations and certificate verification.
 
-Download the apporopriate version to match your Thingworx setup and configure the configuration file.
+Download the apporopriate version to match your Thingworx setup and configure the configuration file. Also see http://www.thingworx.com
 
 This is provided as is and without guarantee.
+
+Please feel free to expand or contribute to this project.
